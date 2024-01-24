@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/casaDeco-removebg-preview.png" alt="logo">
+        </div>
+        <nav> 
+            <ul class="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li class="dropdown">Productos<i class="fa-solid fa-caret-down dropdown__arrow"></i>
+                <ul class="dropdown__content">
+                   <li>
+                    <a href="pages/pisos.html" class="dropdown__link">
+                        Pisos
+                    </a>
+                   </li> 
+                   <li>
+                    <a href="pages/paredes.html" class="dropdown__link">
+                        Paredes
+                    </a>
+                   </li> 
+                   <li>
+                    <a href="pages/muebles.html" class="dropdown__link">
+                        Muebles
+                    </a>
+                   </li> 
+                   <li>
+                    <a href="pages/sanitarios.html" class="dropdown__link">
+                        Sanitarios
+                    </a>
+                   </li> 
+                   
+                </ul>
+                </li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn"><button>Whatsapp</button></a>
+
+        <a onclick="openNav()" class="menu" href="#"><button><i class="fa fa-bars"></i></button></a>
+
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="#" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Inicio</a>
+                <a href="#">Sobre Nosotros</a>
+
+
+                <a onclick="opensubNav()">Productos <i class="fa-solid fa-caret-down dropdown__arrow"></i></a>
+                    <ul class="dropdown__content_sub" id="sub-items">
+                       <li>
+                        <a href="pisos.html" class="dropdown__link_sub">
+                            Pisos
+                        </a>
+                       </li> 
+                       <li>
+                        <a href="paredes.html" class="dropdown__link_sub">
+                            Paredes
+                        </a>
+                       </li> 
+                    </ul>
+                    </a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="hero">
+                <div class="texto">
+                <h1>¡Bienvenidos a CasaDeco!</h1>
+                <p>Juntos daremos vida a tus ideas para crear espacios excepcionales. 
+                    Descubre nuestra exclusiva selección de materiales de alta calidad. 
+                    Con el deseo de dar especial atención a cada detalle, nos entusiasma ser parte de tu próximo proyecto, 
+                    construyendo tus sueños con distinción y buen gusto.</p>
+                    <a href="#" class="btn"><button>Contactar al Whatsapp</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content">
+            <section class="main-content__container container__features">
+
+            <div class="card__feature">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <div class="feature__content">
+                    <span>Precio</span>
+                    <p>Mejores precios del mercado</p>
+                </div>
+            </div>
+
+                <div class="card__feature">
+                    <i class="fa-solid fa-star"></i>
+                    <div class="feature__content">
+                        <span>Calidad</span>
+                        <p>Calidad garantizada</p>
+                    </div>
+                </div>
+
+                    <div class="card__feature">
+                        <i class="fa-solid fa-lock"></i>
+                        <div class="feature__content">
+                            <span>Seguridad</span>
+                            <p>Seguridad en nuestros servicios</p>
+                        </div>
+                    </div>
+        </section>
+        
+
+
+        
+
+            <section class="main-content__container top-categories ">
+                <h1 class="heading-1">Marcas Destacadas</h1>
+
+        
+                <div id="carrusel" class="carrusel_inicio">
+                <div class="container__categories ">
+
+
+                        <div class="categories__card category--uno">
+                            
+                        </div>
+                        <div class="categories__card category--dos">
+                        
+                            
+                        </div>
+                        <div class="categories__card category--tres">
+                        
+                            
+                        </div>
+
+                        <div class="categories__card category--cuatro">
+                        
+                            
+                        </div>
+
+                        <div class="categories__card category--cinco">
+                        
+                            
+                        </div>
+                        <div class="categories__card category--seis">
+                        
+                            
+                        </div>
+                        <div class="categories__card category--siete">
+                        
+                            
+                        </div>
+                        <div class="categories__card category--ocho">
+                        
+                            
+                        </div>
+
+                    
+                </div>
+            
+                </div>
+        </section>
+
+        <!-- Ex productos destacados
+
+            <section class="main-content__container top-products">
+            <h1 class="heading-1">Productos Destacados</h1>
+
+            <div class="container-products">
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="/img/bionyl-2.jpg" alt="imagen1">
+                    </div>
+
+                    <div class="content-card-product">
+                        <h3>Piso 1</h3>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="/img/2674-c8da291e7ea68f21dace20304029d3ad.jpg" alt="imagen1">
+                    </div>
+
+                    <div class="content-card-product">
+                        <h3>Mueble 1</h3>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="/img/fondo-pared-ladrillo-moderno_118019-700.jpg.avif" alt="imagen1">
+                    </div>
+
+                    <div class="content-card-product">
+                        <h3>Pared 1</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+        
+
+        <section>
+            <h1 class="heading-1">Galería de Productos</h1>
+            <div class="gallery">
+                <img src="img/elizabeth/agata_uso.jpeg" alt="piso1" class="gallery-img-1">
+                <img src="img/forte/decorare_bianco_uso.jpeg" alt="" class="gallery-img-2">
+                <img src="img/savane/classic_capuccino_uso.jpeg" alt="" class="gallery-img-3">
+                <img src="img/savane/classic_avela_uso.png" alt="" class="gallery-img-4">
+                <img src="img/forte/ares_gray_uso.jpeg" alt="" class="gallery-img-5">
+            </div>
+            
+            
+        </section>
+
+    </main>
+
+
+<script type="text/javascript" src="js/nav.js"></script>
+<script src="https://kit.fontawesome.com/c615d12fea.js" crossorigin="anonymous"></script>
+</body>
+
+<footer class="footer">
+    <div class="text--footer">
+        <p>CasaDeco <i class="fa-regular fa-copyright"></i> 2023 Todos los derechos reservados.</p>
+        <p>Desarrollado por Diego Enciso.</p>
+    </div>
+    
+</footer>
+</html>
